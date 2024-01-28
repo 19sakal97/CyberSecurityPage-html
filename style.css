@@ -1,0 +1,213 @@
+/* Import písma Poppins */
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+/* Základní určení pro celé body */
+body {
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #17151a;
+    background: #f9f9f9d5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    min-width: 960px;
+}
+/* Hlavička, logo, navigace a jejich ostylování */
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #17151a;
+    color: rgb(8, 236, 96);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+/* Úpravy loga */
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    flex-direction: column;
+    justify-content: center;    
+    background-size: 40px 40px;
+}
+#logo > * {
+    margin: 0 0 0 50px;
+}
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: rgb(8, 236, 96);
+}
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#logo small {
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+/* Úpravy navigace */
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+nav ul a {
+    color: rgb(8, 236, 96);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+nav ul a:hover, .aktivni a, .kontakt-tlacitko{
+    border-bottom: 2px solid #53ef34;
+}
+/* Body-article */
+article {
+    max-width: 960px;
+    margin: 0 auto;    
+    padding: 50px 50px 10px 50px;
+}
+article header {
+    height: 80px;
+}
+/* Definovaná h1 */
+article h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    border-bottom: 4px solid#17151a;
+}
+/* Definovaná h2 */
+article h2 {
+    font-size: 2em;
+}
+/* Definován textový obsah */
+article section p {
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+}
+/* Úprava odkazu */
+article section a {
+    color: rgb(15, 145, 65)  
+}
+/* Obecně co platí pro všechny nadpisy */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    padding: 10px 0;
+    color: rgb(15, 145, 65);
+}
+/* Stylování kontaktu-formuláře */
+.centrovany {
+    width: 300px;  
+}
+.centrovany input {    
+    margin: 2px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: "Poppins";
+}
+.centrovany textarea {    
+    margin: 2px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 2px solid black;
+    font-family: "Poppins";
+}
+input[type="submit"] {
+    text-align: center;
+    background: #17151a;
+    color: #53ef34;
+    padding: 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+input[type="submit"]:hover {
+    text-align: center;
+    background: #53ef34;
+    color: #17151a;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* Úprava fotky */
+.avatar {
+    float: right;
+    width: 300px;
+    padding-left: 10px;    
+}
+/* cistic pro float je dán do divu */
+.cistic {
+    clear: both;
+}
+/* Tlačítko */
+.reference-tlacitko {
+    background: #17151a;
+    color: rgb(8, 236, 96);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+.kontakt-tlacitko {
+    border-bottom: rgb(8, 236, 96);    
+}
+/* hover tlačítek */
+.reference-tlacitko:hover {
+    background: rgb(8, 236, 96);
+    color: #17151a;
+    font-size: 1.em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;    
+}
+html {
+    background:  #17151a;
+}
+/* Patička */
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    color: rgb(8, 236, 96);
+    background: #17151a;
+    padding: 10px 0 0 0;   
+}
+/* Stylování tabulky */
+#dovednosti {
+    border-collapse: collapse;
+}
+#dovednosti td {
+    width: 10%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid grey;
+}
